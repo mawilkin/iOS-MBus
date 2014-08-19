@@ -37,7 +37,7 @@
     
     if (screenHeight < 568.0 || [[UIDevice currentDevice].model isEqualToString:@"iPod touch"]) {
         self.coverImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, screenHeight)];
-        self.coverImage.image = [UIImage imageNamed:@"loading_small"];
+        self.coverImage.image = [UIImage imageNamed:@"ScreenShot"];
         self.coverImage.contentMode = UIViewContentModeScaleToFill;
         [self.view addSubview:self.coverImage];
         [self performSelector:@selector(hideCover) withObject:nil afterDelay:4.0];
