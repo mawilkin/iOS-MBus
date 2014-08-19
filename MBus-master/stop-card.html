@@ -1,0 +1,130 @@
+<link rel="import" href="components_full/bower_components/polymer/polymer.html">
+<link rel="import" href="components_full/bower_components/core-ajax/core-ajax.html">
+
+<link rel="import" href="components_full/bower_components/core-collapse/core-collapse.html">
+<link rel="import" href="components_full/bower_components/paper-shadow/paper-shadow.html">
+<link rel="import" href="components_full/bower_components/core-icons/iconsets/icons.html">
+ 
+<polymer-element name="stop-card" attributes="stopID name">
+  <template>
+    <style>
+      .stop_btn {
+        position: relative;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5% 0 3% 0;
+        font-size: 1.75em;
+        color: #00274c;
+        border: 0;
+        background: none;
+        outline: 0;
+      }
+
+      .route-name {
+        margin-top: 2%;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 1.4em;
+      }
+
+      .time-list {
+        margin: -4% 0 7% 3%;
+        font-size: 1.1em;
+        font-family: sans-serif;
+      }
+
+      core-icon {
+        float: left;
+        margin-right: 0.5em;
+        margin-top: 0.1em;
+        color: #00274c;
+      }
+
+      core-icon:first-of-type {
+        margin-top: 0.35em;
+      }
+
+      .card {
+        background: white;
+        width: 20%;
+        min-width: 250px;
+        height: auto;
+        position: relative;
+        margin: 20px auto;
+        border-radius: 2px;
+        padding: 5px 20px;
+      }
+    </style>
+
+    <!--ajax calls here-->
+    <!--<core-ajax url="http://141.213.90.22:8001/routes" auto handleAs="json" on-core-response="{{resp2}}"></core-ajax>
+
+    <core-ajax url="http://141.213.90.22:8001/eta/stop={{stopID}}" auto handleAs="json" on-core-response="{{resp}}"></core-ajax> 
+    -->
+    
+    <core-ajax url="http://54.164.44.218:8001/routes" auto handleAs="json" on-core-response="{{resp2}}"></core-ajax>
+
+    <core-ajax url="http://54.164.44.218:8001/eta/stop={{stopID}}" auto handleAs="json" on-core-response="{{resp}}"></core-ajax>
+
+
+    <!-- Card Content -->
+    <div class="card">
+      <paper-shadow z="1"></paper-shadow>
+
+      <button class="stop_btn" on-click="{{toggle}}">{{name}}</button>
+      <core-collapse opened="true" id="{{name}}">
+        <template repeat="{{r in routes}}">
+          <core-icon size="25px" icon="directions-bus"></core-icon>
+            <h3 class="route-name">{{r.name}}</h3>
+            <ul class="time-list">
+              <template repeat="{{s in stops}}">
+                <template bind if="{{s.route == r.route}}">
+                  <li>{{s.time}} minutes</li>
+                </template>
+              </template>
+            </ul>
+        </template>
+      </core-collapse>
+    </div>
+
+  </template>
+
+
+  <script>
+    Polymer('stop-card', {
+      stopID: "91",
+      name: "Pierpont",
+      toggle: function() {        
+        this.$[this.name].toggle();
+      },
+      resp2: function(event, res){
+        this.routes = [];
+        var routes = res.response;
+
+        for(r in routes){
+          for(s in routes[r].stops)
+          if(routes[r].stops[s] == this.stopID){
+            this.routes.push({name: routes[r].name, route: routes[r].id})
+          }
+        }
+      },
+      resp: function(event, res) {
+        this.stops = [];
+
+        var stop = res.response.etas[this.stopID].etas;
+
+        for(s in stop){
+          var avg = stop[s].avg
+          if(avg < 61){
+            this.stops.push({time: avg, route: stop[s].route})
+          }
+        }
+        
+      }
+
+    });
+
+
+  </script>
+</polymer-element>

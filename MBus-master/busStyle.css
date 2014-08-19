@@ -1,0 +1,59 @@
+h1 {
+  color: #ffcb0b;
+  text-align: center;
+  font-size: 35px;
+}
+
+#refresh {
+	color: #ffcb0b;
+	background-color: #00274c;
+	margin-left: 2%;
+	margin-top: 7%;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+core-header-panel {
+  height: 100%;
+}
+
+core-toolbar {
+	background-color: #00274c;
+}
+
+#title-div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	font-size: 2.5em;
+	color: #ffcb0b;	
+	margin: 0;
+	font-family: 'Shadows Into Light', cursive;
+	/*font-weight: normal;*/
+}
+
+button {
+	background: none;
+	border: none;
+	display: block;
+}
+
+#more_btn {
+	margin: 2em auto 2em auto;
+	color: #00274c;
+}
+
+#locate {
+	color: #ffcb0b;
+}
+
+#locate-div {
+	position: absolute;
+	right: 0;
+	top: 0.5em;
+}
