@@ -23,7 +23,7 @@
     CGFloat screenHeight = screenBound.size.height;
     
     self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, screenHeight)];
-    NSURL *nsurl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"mbus" ofType:@"html"]];
+    NSURL *nsurl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"built" ofType:@"html"]];
     NSURLRequest *nsrequest=[NSURLRequest requestWithURL:nsurl];
     
     [self.webview loadRequest:nsrequest];
@@ -40,7 +40,7 @@
         self.coverImage.image = [UIImage imageNamed:@"ScreenShot"];
         self.coverImage.contentMode = UIViewContentModeScaleToFill;
         [self.view addSubview:self.coverImage];
-        [self performSelector:@selector(hideCover) withObject:nil afterDelay:4.0];
+        [self performSelector:@selector(hideCover) withObject:nil afterDelay:3.0];
     }
     
 }
