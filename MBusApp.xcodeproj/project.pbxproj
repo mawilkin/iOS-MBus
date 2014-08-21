@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E541D7F19A67E23004FEF72 /* built.html in Resources */ = {isa = PBXBuildFile; fileRef = 9E541D7E19A67E23004FEF72 /* built.html */; };
 		9EEA39B119A2565B00EE4BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B019A2565B00EE4BB0 /* Foundation.framework */; };
 		9EEA39B319A2565B00EE4BB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B219A2565B00EE4BB0 /* CoreGraphics.framework */; };
 		9EEA39B519A2565B00EE4BB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B419A2565B00EE4BB0 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E541D7E19A67E23004FEF72 /* built.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = built.html; path = "MBus-master/built.html"; sourceTree = SOURCE_ROOT; };
+		9E541D8019A67E45004FEF72 /* ShadowsIntoLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ShadowsIntoLight.ttf; path = "MBus-master/ShadowsIntoLight.ttf"; sourceTree = SOURCE_ROOT; };
 		9EEA39AD19A2565B00EE4BB0 /* MBusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEA39B019A2565B00EE4BB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9EEA39B219A2565B00EE4BB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -171,6 +174,8 @@
 				9EEA39EA19A2579800EE4BB0 /* busStyle.css */,
 				9EEA3A1D19A25D8C00EE4BB0 /* busData.min.js */,
 				9EEA3A1F19A25D9700EE4BB0 /* jquery-1.11.1.min.js */,
+				9E541D7E19A67E23004FEF72 /* built.html */,
+				9E541D8019A67E45004FEF72 /* ShadowsIntoLight.ttf */,
 				9EEA39E819A2578E00EE4BB0 /* mbus.html */,
 				9EEA39EC19A257CF00EE4BB0 /* stop-card.html */,
 				9EEA39FB19A2595400EE4BB0 /* components_full */,
@@ -257,6 +262,7 @@
 				9EEA39E919A2578E00EE4BB0 /* mbus.html in Resources */,
 				9EEA39BB19A2565B00EE4BB0 /* InfoPlist.strings in Resources */,
 				9EEA3A2319A260DA00EE4BB0 /* busData.min.js in Resources */,
+				9E541D7F19A67E23004FEF72 /* built.html in Resources */,
 				9EEA3A2419A260DE00EE4BB0 /* jquery-1.11.1.min.js in Resources */,
 				9EEA39ED19A257CF00EE4BB0 /* stop-card.html in Resources */,
 				9EEA39C419A2565B00EE4BB0 /* Main.storyboard in Resources */,
