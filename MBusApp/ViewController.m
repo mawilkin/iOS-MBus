@@ -22,7 +22,7 @@
     CGRect screenBound = [[UIScreen mainScreen] bounds];
     CGFloat screenHeight = screenBound.size.height;
     
-    self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, screenHeight)];
+    self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, screenHeight-20)];
     NSURL *nsurl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"built" ofType:@"html"]];
     NSURLRequest *nsrequest=[NSURLRequest requestWithURL:nsurl];
     
@@ -35,13 +35,25 @@
     
     NSLog(@"value of screenHeight: %f", screenHeight);
     
-    if (screenHeight < 568.0 || [[UIDevice currentDevice].model isEqualToString:@"iPod touch"]) {
-        self.coverImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, screenHeight)];
-        self.coverImage.image = [UIImage imageNamed:@"ScreenShot"];
-        self.coverImage.contentMode = UIViewContentModeScaleToFill;
-        [self.view addSubview:self.coverImage];
-        [self performSelector:@selector(hideCover) withObject:nil afterDelay:3.0];
+    //Set up Splash Screen
+    self.coverImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, screenHeight)];
+    self.coverImage.contentMode = UIViewContentModeScaleToFill;
+    
+    if (screenHeight < 568.0) {
+        self.coverImage.image = [UIImage imageNamed:@"SplashScreen_Small"];
+    } else {
+        self.coverImage.image = [UIImage imageNamed:@"SplashScreen"];
     }
+    
+    //Display Splash Screen
+    if (screenHeight < 568.0 || [[UIDevice currentDevice].model isEqualToString:@"iPod touch"]) {
+        [self performSelector:@selector(hideCover) withObject:nil afterDelay:3.0];
+    } else {
+        [self performSelector:@selector(hideCover) withObject:nil afterDelay:2.0];
+    }
+    
+    [self.view addSubview:self.coverImage];
+    
     
 }
 
