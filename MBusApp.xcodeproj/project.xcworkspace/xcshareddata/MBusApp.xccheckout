@@ -10,29 +10,29 @@
 	<string>MBusApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D8A01A73-B560-40A5-BE88-6335EB4A0F4D</key>
+		<key>28EA242307551D4BDCD87DDD9D148D56D66C1E18</key>
 		<string>https://github.com/mawilkin/iOS-MBus.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MBusApp.xcodeproj/project.xcworkspace</string>
+	<string>MBusApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D8A01A73-B560-40A5-BE88-6335EB4A0F4D</key>
+		<key>28EA242307551D4BDCD87DDD9D148D56D66C1E18</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mawilkin/iOS-MBus.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D8A01A73-B560-40A5-BE88-6335EB4A0F4D</string>
+	<string>28EA242307551D4BDCD87DDD9D148D56D66C1E18</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D8A01A73-B560-40A5-BE88-6335EB4A0F4D</string>
+			<string>28EA242307551D4BDCD87DDD9D148D56D66C1E18</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS-MBus</string>
 		</dict>

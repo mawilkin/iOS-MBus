@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5018F28519FC1E8D00D737A3 /* components_full in Resources */ = {isa = PBXBuildFile; fileRef = 5018F28419FC1E8D00D737A3 /* components_full */; };
+		5018F28719FC24C900D737A3 /* build.html in Resources */ = {isa = PBXBuildFile; fileRef = 5018F28619FC24C900D737A3 /* build.html */; };
+		5018F28919FC32BF00D737A3 /* complete.html in Resources */ = {isa = PBXBuildFile; fileRef = 5018F28819FC32BF00D737A3 /* complete.html */; };
 		9E541D7F19A67E23004FEF72 /* built.html in Resources */ = {isa = PBXBuildFile; fileRef = 9E541D7E19A67E23004FEF72 /* built.html */; };
 		9EEA39B119A2565B00EE4BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B019A2565B00EE4BB0 /* Foundation.framework */; };
 		9EEA39B319A2565B00EE4BB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B219A2565B00EE4BB0 /* CoreGraphics.framework */; };
@@ -24,7 +27,6 @@
 		9EEA39E919A2578E00EE4BB0 /* mbus.html in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA39E819A2578E00EE4BB0 /* mbus.html */; };
 		9EEA39EB19A2579800EE4BB0 /* busStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA39EA19A2579800EE4BB0 /* busStyle.css */; };
 		9EEA39ED19A257CF00EE4BB0 /* stop-card.html in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA39EC19A257CF00EE4BB0 /* stop-card.html */; };
-		9EEA39FC19A2595400EE4BB0 /* components_full in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA39FB19A2595400EE4BB0 /* components_full */; };
 		9EEA3A2319A260DA00EE4BB0 /* busData.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA3A1D19A25D8C00EE4BB0 /* busData.min.js */; };
 		9EEA3A2419A260DE00EE4BB0 /* jquery-1.11.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA3A1F19A25D9700EE4BB0 /* jquery-1.11.1.min.js */; };
 		9EEA3A2619A2717E00EE4BB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA3A2519A2717E00EE4BB0 /* Images.xcassets */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5018F28419FC1E8D00D737A3 /* components_full */ = {isa = PBXFileReference; lastKnownFileType = folder; name = components_full; path = "MBus-master/components_full"; sourceTree = SOURCE_ROOT; };
+		5018F28619FC24C900D737A3 /* build.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = build.html; path = "MBus-master/build.html"; sourceTree = SOURCE_ROOT; };
+		5018F28819FC32BF00D737A3 /* complete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = complete.html; path = "MBus-master/complete.html"; sourceTree = SOURCE_ROOT; };
 		9E541D7E19A67E23004FEF72 /* built.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = built.html; path = "MBus-master/built.html"; sourceTree = SOURCE_ROOT; };
 		9E541D8019A67E45004FEF72 /* ShadowsIntoLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ShadowsIntoLight.ttf; path = "MBus-master/ShadowsIntoLight.ttf"; sourceTree = SOURCE_ROOT; };
 		9EEA39AD19A2565B00EE4BB0 /* MBusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +69,6 @@
 		9EEA39E819A2578E00EE4BB0 /* mbus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = mbus.html; path = "MBus-master/mbus.html"; sourceTree = SOURCE_ROOT; };
 		9EEA39EA19A2579800EE4BB0 /* busStyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = busStyle.css; path = "MBus-master/busStyle.css"; sourceTree = SOURCE_ROOT; };
 		9EEA39EC19A257CF00EE4BB0 /* stop-card.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "stop-card.html"; path = "MBus-master/stop-card.html"; sourceTree = SOURCE_ROOT; };
-		9EEA39FB19A2595400EE4BB0 /* components_full */ = {isa = PBXFileReference; lastKnownFileType = folder; name = components_full; path = "MBus-master/components_full"; sourceTree = SOURCE_ROOT; };
 		9EEA3A1D19A25D8C00EE4BB0 /* busData.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = busData.min.js; path = "MBus-master/busData.min.js"; sourceTree = SOURCE_ROOT; };
 		9EEA3A1F19A25D9700EE4BB0 /* jquery-1.11.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-1.11.1.min.js"; path = "MBus-master/jquery-1.11.1.min.js"; sourceTree = SOURCE_ROOT; };
 		9EEA3A2519A2717E00EE4BB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -174,11 +178,13 @@
 				9EEA39EA19A2579800EE4BB0 /* busStyle.css */,
 				9EEA3A1D19A25D8C00EE4BB0 /* busData.min.js */,
 				9EEA3A1F19A25D9700EE4BB0 /* jquery-1.11.1.min.js */,
+				5018F28819FC32BF00D737A3 /* complete.html */,
 				9E541D7E19A67E23004FEF72 /* built.html */,
+				5018F28619FC24C900D737A3 /* build.html */,
 				9E541D8019A67E45004FEF72 /* ShadowsIntoLight.ttf */,
 				9EEA39E819A2578E00EE4BB0 /* mbus.html */,
 				9EEA39EC19A257CF00EE4BB0 /* stop-card.html */,
-				9EEA39FB19A2595400EE4BB0 /* components_full */,
+				5018F28419FC1E8D00D737A3 /* components_full */,
 			);
 			name = WebPage;
 			sourceTree = "<group>";
@@ -264,10 +270,12 @@
 				9EEA3A2319A260DA00EE4BB0 /* busData.min.js in Resources */,
 				9E541D7F19A67E23004FEF72 /* built.html in Resources */,
 				9EEA3A2419A260DE00EE4BB0 /* jquery-1.11.1.min.js in Resources */,
+				5018F28719FC24C900D737A3 /* build.html in Resources */,
+				5018F28519FC1E8D00D737A3 /* components_full in Resources */,
 				9EEA39ED19A257CF00EE4BB0 /* stop-card.html in Resources */,
+				5018F28919FC32BF00D737A3 /* complete.html in Resources */,
 				9EEA39C419A2565B00EE4BB0 /* Main.storyboard in Resources */,
 				9EEA39EB19A2579800EE4BB0 /* busStyle.css in Resources */,
-				9EEA39FC19A2595400EE4BB0 /* components_full in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

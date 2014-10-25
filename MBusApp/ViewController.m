@@ -23,7 +23,7 @@
     CGFloat screenHeight = screenBound.size.height;
     
     self.webview=[[UIWebView alloc]initWithFrame:CGRectMake(0, 20, 320, screenHeight-20)];
-    NSURL *nsurl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"built" ofType:@"html"]];
+    NSURL *nsurl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"complete" ofType:@"html"]];
     NSURLRequest *nsrequest=[NSURLRequest requestWithURL:nsurl];
     
     [self.webview loadRequest:nsrequest];

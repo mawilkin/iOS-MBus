@@ -5,5 +5,8 @@
     "core-icon": "Polymer/core-icon#master",
     "core-icons": "Polymer/core-icons#master",
     "font-roboto": "Polymer/font-roboto#master"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^1.0.0"
   }
 }
