@@ -10,6 +10,7 @@
 		5018F28519FC1E8D00D737A3 /* components_full in Resources */ = {isa = PBXBuildFile; fileRef = 5018F28419FC1E8D00D737A3 /* components_full */; };
 		5018F28719FC24C900D737A3 /* build.html in Resources */ = {isa = PBXBuildFile; fileRef = 5018F28619FC24C900D737A3 /* build.html */; };
 		5018F28919FC32BF00D737A3 /* complete.html in Resources */ = {isa = PBXBuildFile; fileRef = 5018F28819FC32BF00D737A3 /* complete.html */; };
+		5018F28A19FD928100D737A3 /* ShadowsIntoLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E541D8019A67E45004FEF72 /* ShadowsIntoLight.ttf */; };
 		9E541D7F19A67E23004FEF72 /* built.html in Resources */ = {isa = PBXBuildFile; fileRef = 9E541D7E19A67E23004FEF72 /* built.html */; };
 		9EEA39B119A2565B00EE4BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B019A2565B00EE4BB0 /* Foundation.framework */; };
 		9EEA39B319A2565B00EE4BB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA39B219A2565B00EE4BB0 /* CoreGraphics.framework */; };
@@ -269,6 +270,7 @@
 				9EEA39BB19A2565B00EE4BB0 /* InfoPlist.strings in Resources */,
 				9EEA3A2319A260DA00EE4BB0 /* busData.min.js in Resources */,
 				9E541D7F19A67E23004FEF72 /* built.html in Resources */,
+				5018F28A19FD928100D737A3 /* ShadowsIntoLight.ttf in Resources */,
 				9EEA3A2419A260DE00EE4BB0 /* jquery-1.11.1.min.js in Resources */,
 				5018F28719FC24C900D737A3 /* build.html in Resources */,
 				5018F28519FC1E8D00D737A3 /* components_full in Resources */,

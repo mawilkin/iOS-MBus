@@ -29,11 +29,13 @@ core-toolbar {
 	margin-right: auto;
 }
 
+@font-face{font-family:MaxW;src:url(ShadowsIntoLight.ttf);}
+
 #title {
 	font-size: 2.5em;
 	color: #ffcb0b;	
 	margin: 0;
-	font-family: 'Shadows Into Light', cursive;
+	font-family: MaxW, 'Shadows Into Light', cursive;
 	/*font-weight: normal;*/
 }
 
